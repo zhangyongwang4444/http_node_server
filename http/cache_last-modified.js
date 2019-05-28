@@ -5,6 +5,7 @@ const http = require('http')
 const fs = require('fs')
 const path = require('path')
 
+
 http.createServer((req, res) => {
     let filePath = path.join(__dirname, req.url)
     fs.readFile(filePath, (err, data) => {
